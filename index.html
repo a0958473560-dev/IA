@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CodeCraft Hub：以專案實作學習現代網頁開發。" />
+    <title>CodeCraft Hub｜程式設計開發</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top site-nav" aria-label="主要導覽">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top"><span class="brand-mark">&lt;/&gt;</span><span>CodeCraft<span class="text-info">Hub</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="開啟導覽選單"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="#top">首頁</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#courses" role="button" data-bs-toggle="dropdown" aria-expanded="false">學習路徑</a><ul class="dropdown-menu dropdown-menu-dark border-0 shadow"><li><a class="dropdown-item" href="#courses">HTML & CSS</a></li><li><a class="dropdown-item" href="#courses">JavaScript ES6+</a></li><li><a class="dropdown-item" href="#project">專案實作</a></li></ul></li>
+            <li class="nav-item"><a class="nav-link" href="#articles">精選文章</a></li>
+            <li class="nav-item"><a class="nav-link" href="#project">作品展示</a></li>
+            <li class="nav-item"><button id="themeToggle" class="btn theme-toggle" type="button" aria-label="切換色彩模式">☀︎</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero-section py-5">
+        <div class="container py-lg-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <p class="eyebrow mb-3">MODERN WEB DEVELOPMENT</p>
+              <h1 class="display-3 fw-bold lh-sm">從第一行程式，<br /><span class="gradient-text">建構你的數位作品。</span></h1>
+              <p class="lead text-secondary-emphasis mt-4 mb-4">用清楚的路徑學習 HTML、CSS 與 ES6。每一堂課都帶你把觀念寫成真正能上線的作品。</p>
+              <div class="d-flex flex-wrap gap-3"><a class="btn btn-primary btn-lg px-4" href="#courses">開始學習 <span aria-hidden="true">→</span></a><a class="btn btn-outline-light btn-lg px-4" href="#project">查看專案</a></div>
+              <div class="d-flex gap-4 mt-5 stats"><div><strong>24</strong><span>實作單元</span></div><div><strong>08</strong><span>完整專案</span></div><div><strong>100%</strong><span>RWD 設計</span></div></div>
+            </div>
+            <div class="col-lg-5">
+              <div class="code-window shadow-lg">
+                <div class="window-top"><span></span><span></span><span></span><small>portfolio.js</small></div>
+                <pre class="mb-0"><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">'你的名字'</span>,
+  skills: [<span class="code-green">'HTML'</span>, <span class="code-green">'CSS'</span>, <span class="code-green">'ES6'</span>],
+  build() {
+    <span class="code-purple">return</span> <span class="code-green">'something awesome'</span>;
+  }
+};
+
+developer.<span class="code-blue">build</span>();</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="py-5 section-space">
+        <div class="container">
+          <div class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4"><div><p class="eyebrow">LEARNING PATH</p><h2 class="fw-bold">循序漸進的開發路徑</h2></div><p class="text-body-secondary mb-0">不只看懂，也要寫得出來。</p></div>
+          <div class="row g-4">
+            <div class="col-md-4"><article class="learning-card h-100"><span class="course-no">01</span><div class="course-icon">⌘</div><h3>HTML & CSS</h3><p>建立語意結構，掌握 Flexbox、Grid 與響應式版面。</p><a href="#articles" class="stretched-link">探索基礎 <span>→</span></a></article></div>
+            <div class="col-md-4"><article class="learning-card h-100 featured"><span class="course-no">02</span><div class="course-icon">{ }</div><h3>JavaScript ES6+</h3><p>從變數、函式到 DOM 操作，讓靜態頁面真正動起來。</p><a href="#articles" class="stretched-link">開始互動 <span>→</span></a></article></div>
+            <div class="col-md-4"><article class="learning-card h-100"><span class="course-no">03</span><div class="course-icon">↗</div><h3>專案實作</h3><p>整合所學，完成可展示、可持續擴充的個人作品。</p><a href="#project" class="stretched-link">打造作品 <span>→</span></a></article></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reference-gallery" class="py-5 section-space gallery-section">
+        <div class="container">
+          <div class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div><p class="eyebrow">SOURCE MATERIALS</p><h2 class="fw-bold">七張課程程式圖卡</h2></div>
+            <p class="text-body-secondary mb-0">從版面基礎到手機 RWD，一次整理。</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/header-navbar.jpg" alt="Header 與 Navbar 的 CSS 範例" loading="lazy" /><figcaption><span>01 · 基礎</span><strong>Header 與導覽列</strong></figcaption></figure></div>
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/navbar-flex.jpg" alt="Flex Navbar 與下拉選單的 CSS 範例" loading="lazy" /><figcaption><span>02 · Flexbox</span><strong>導覽列與 Dropdown</strong></figcaption></figure></div>
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/nav-dropdown.jpg" alt="搜尋框、Hover 與 Footer 的 CSS 範例" loading="lazy" /><figcaption><span>03 · Interaction</span><strong>Hover、搜尋與 Footer</strong></figcaption></figure></div>
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/flex-columns.jpg" alt="Flex 雙欄布局的 CSS 範例" loading="lazy" /><figcaption><span>04 · Layout</span><strong>Flex 雙欄內容布局</strong></figcaption></figure></div>
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/layout-float.jpg" alt="Float 雙欄布局與卡片的 CSS 範例" loading="lazy" /><figcaption><span>05 · Legacy CSS</span><strong>Float 與文章卡片</strong></figcaption></figure></div>
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/rwd-mobile.jpg" alt="手機版漢堡選單的 CSS 範例" loading="lazy" /><figcaption><span>06 · Mobile</span><strong>漢堡選單與手機導覽</strong></figcaption></figure></div>
+            <div class="col-sm-6 col-lg-4"><figure class="reference-card h-100"><img src="assets/images/media-queries.jpg" alt="Media Queries 響應式 CSS 範例" loading="lazy" /><figcaption><span>07 · RWD</span><strong>Media Queries 響應式規則</strong></figcaption></figure></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="articles" class="py-5 section-space soft-surface">
+        <div class="container">
+          <div class="row g-5"><div class="col-lg-8"><p class="eyebrow">LATEST NOTES</p><h2 class="fw-bold mb-4">精選開發筆記</h2><div class="input-group search-box mb-4"><span class="input-group-text">⌕</span><input id="articleSearch" class="form-control" type="search" placeholder="搜尋文章主題，例如：Flexbox、RWD、JavaScript" aria-label="搜尋文章" /></div>
+            <div id="articleList" class="vstack gap-3">
+              <article class="article-row" data-keywords="flexbox css 版面 響應式"><span class="article-tag">CSS</span><div><h3>用 Flexbox 寫出不會崩壞的雙欄版面</h3><p>理解主軸、交叉軸與斷點，建立現代且穩定的內容布局。</p><small>8 分鐘閱讀 · 版面系統</small></div><span class="arrow">→</span></article>
+              <article class="article-row" data-keywords="rwd media query 手機 響應式"><span class="article-tag">RWD</span><div><h3>從桌機到手機：Media Queries 的實務思考</h3><p>先規劃內容優先順序，再定義真正有意義的 responsive breakpoint。</p><small>6 分鐘閱讀 · 響應式設計</small></div><span class="arrow">→</span></article>
+              <article class="article-row" data-keywords="javascript es6 dom 互動"><span class="article-tag">ES6</span><div><h3>用原生 JavaScript 做出乾淨的互動介面</h3><p>練習事件監聽、陣列操作與 DOM 更新，避免不必要的複雜度。</p><small>10 分鐘閱讀 · 前端互動</small></div><span class="arrow">→</span></article>
+            </div><p id="emptyState" class="d-none text-body-secondary py-4">找不到相符文章，換個關鍵字試試。</p>
+          </div><aside class="col-lg-4"><div class="sidebar-card"><p class="eyebrow">QUICK REFERENCE</p><h3 class="h4 fw-bold mb-3">CSS 速查卡</h3><div class="code-snippet"><button class="copy-btn" data-copy-target="flexCode" type="button">複製</button><pre id="flexCode"><code>.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}</code></pre></div><p class="small text-body-secondary mb-0">使用 <code>flex-wrap</code> 搭配斷點，讓內容自然適應不同尺寸。</p></div><div class="sidebar-card mt-4"><h3 class="h5 fw-bold">本週學習清單</h3><ul class="check-list"><li>完成導覽列與下拉選單</li><li>練習雙欄內容版面</li><li>加入 768px 手機斷點</li></ul></div></aside></div>
+        </div>
+      </section>
+
+      <section id="project" class="py-5 section-space"><div class="container"><div class="project-panel"><div><p class="eyebrow">BUILD IN PUBLIC</p><h2 class="fw-bold">下一個專案，<br />就從這個版型開始。</h2><p class="text-body-secondary">一個結合 Bootstrap 5、客製 CSS 與 ES6 的開發者入口網站。</p></div><a href="#top" class="btn btn-primary btn-lg">回到頂端 ↑</a></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 CodeCraft Hub</span><span>Build with HTML · CSS · ES6 · Bootstrap 5</span></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
